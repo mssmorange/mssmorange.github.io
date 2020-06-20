@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="219.63" height="278.78" viewBox="0 0 219.63 278.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #534242;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>line</title>
+  <g id="レイヤー_2" data-name="レイヤー 2">
+    <g id="記事">
+      <g>
+        <line class="cls-1" x1="218.57" y1="188.39" x2="0.57" y2="277.39"/>
+        <line class="cls-1" x1="219.07" y1="200.39" x2="85.57" y2="254.89"/>
+        <line class="cls-1" x1="218.57" y1="90.39" x2="0.57" y2="1.39"/>
+        <line class="cls-1" x1="219.07" y1="78.39" x2="85.57" y2="23.89"/>
+      </g>
+    </g>
+  </g>
+</svg>

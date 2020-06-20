@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="29.49" viewBox="0 0 70 29.49">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 22.88px;
+        fill: #534242;
+        font-family: BradleyHandITCTT-Bold, Bradley Hand;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #c74242;
+      }
+    </style>
+  </defs>
+  <title>menu</title>
+  <g id="レイヤー_2" data-name="レイヤー 2">
+    <g id="記事">
+      <g>
+        <text class="cls-1" transform="translate(0 17.65)">MENU</text>
+        <path class="cls-2" d="M18.17,25.16c7.15,5.2,16.27,4.77,24.59,3.53,3.56-.53,7.75-1.4,9.33-5.08.57-1.32.74-3.13-.36-4.22s-2.88-.81-4.2-.37a9.12,9.12,0,0,0-6.15,8.16c-.06,1.08,1.62,1.08,1.67,0,.16-3.28,2.93-6.72,6.39-6.86,2.91-.12.71,3.65-.35,4.54a11.48,11.48,0,0,1-5.64,2.05c-8.19,1.34-17.37,2-24.51-3.06-.8-.57-1.55.74-.77,1.31Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

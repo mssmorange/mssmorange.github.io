@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+<title>Takeshita×Gourmet</title>
+<link href="../css/format.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180×180" href="../images/apple-touch-icon-180x180.png">
+<link href="../css/page.css" rel="stylesheet" type="text/css">
+<link href="../css/colorful.css" rel="stylesheet" type="text/css">
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="../js/jquery.inview.js"></script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+<script>
+$(function(){
+
+/*colorbox指定*/
+$("article.all a").colorbox({
+maxWidth:"90%",
+maxHeight:"90%"
+});
+
+/*inview指定*/
+$("article#lr1,article#lr2").on('inview',function(event,isInView){
+　if(isInView){/*画面に出てきたときの処理*/
+　　　$(this).css("opacity","1")
+　}else{/*画面外に出たときの処理*/
+　　　$(this).css("opacity","0")
+}
+});
+
+/*ウィンドウ　スクロール指定*/
+$(window).scroll(function(){
+
+ if($(this).scrollTop() > 100){
+  $("aside#scrolltop a").css("bottom","30px");
+}else{
+  $("aside#scrolltop a").css("bottom","-150px");
+
+} 
+
+});
+
+});/*jguery閉じ*/
+
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<a href="../index.html"><img src="../images/rogo.svg" alt="ロゴマーク"></a>
+
+<input type="checkbox" id="trigger">
+
+<label for="trigger" id="hamburger"><span></span></label>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../tapioca/tapioca.html">Tapioca</a></li>
+<li><a href="../sweets/sweets.html">Sweets</a></li>
+<li class="now"><a href="colorful.html">Colorful</a></li>
+</ul>
+</nav>
+
+<label for="trigger" id="coverlayer"></label>
+
+</header>
+
+<!--トップ画像ここから-->
+<div id="top">
+<div id="top_photo">背景画像</div>
+<figure><img src="../images/colorful_top.svg" alt="カラフル"></figure>
+</div>
+<!--トップ画像ここまで-->
+
+<!--内容ここから-->
+<div id="pink">
+
+<article class="all">
+
+<h1 id="first">
+LONG LONGER LONGEST<br>
+レインボーチーズトースト
+</h1>
+
+<article id="lr1">
+
+<a href="../images/colorful1.jpg">
+<figure><img src="../images/colorful1_photo.jpg" alt="カラフル1"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>ここでは、焼きたてアツアツのチーズトーストを<br class="sp">食べることができます。<br>
+注目すべきはなんといってもこの虹色に染まった<br class="sp">チーズ！<br>
+そのカラフルさから一見CGのようにも見えて<br class="sp">しまいますが、全て実物です。</p>
+
+<p>「青や紫のチーズって…美味しいの？」<br class="sp">
+そう思った方、ご安心ください！モノ凄く派手な<br class="sp">
+色をしていますが、味は少し塩気が強い普通の<br class="sp">チーズ味です。<br>
+むしろそのしょっぱさがサクサクのトーストと<br class="sp">合わさって、あっという間に食べ終わって<br class="sp">しまいます！</p>
+
+<p>そこそこお腹が膨れる一品なので小腹が空いた<br class="sp">ときに食べると◎</p>
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★★★<br>
+カラフル度：★★★★★<br>
+満腹感：★★★☆☆<br>
+チーズの伸び具合：★★★★★</p>
+
+<aside class="address">
+
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目7-3<br>CUTE CUBE HARAJUKU 1階</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2522173591656!2d139.7032525152584!3d35.670791180196794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca4b4ba1157%3A0x883f4a8eee4c3aec!2sLONG*21%20LONGER*21*21%20LONGEST*21*21*21!5e0!3m2!1sja!2sjp!4v1581564967065!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<article class="all">
+
+<h1 id="second">
+Sweet XO Good Grief <br class="sp">原宿竹下通り店<br>
+哺乳類ソーダ</h1>
+
+<article id="lr2">
+
+<a href="../images/colorful2.jpg">
+<figure><img src="../images/colorful2_photo.jpg" alt="カラフル2"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>原宿系インフルエンサー「しなこ」さんによって<br class="sp">考案された不思議なドリンク。<br>
+見た目はまさにあの哺乳瓶です。飲み口の部分に<br class="sp">透明なストローがささっていてそこから飲める<br class="sp">ようになっています。ジュースには、カラフルな<br class="sp">タピオカが入っていて飲みごたえもバツグンです！</p>
+
+<p>筆者が今回注文したのは紫のソーダ。この他にも<br class="sp">ピンクやブルーといったカラフルなソーダが<br class="sp">揃っています。ソーダだけではなくカルピスも<br class="sp">ありますよ！</p>
+
+<p>そして、飲み終わったボトルは貯金箱として<br class="sp">再利用可能！<br>
+原宿でしか飲めないオススメの一品です！</p>
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★★★<br>
+カラフル度：★★★★☆<br>
+満腹感：★★☆☆☆<br>
+赤ちゃん気分度：★★★★★</p>
+
+<aside class="address">
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目16-6<br>原宿77ビル1階</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.235471228455!2d139.70245955079375!3d35.67120358009943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cbb3ae51e61%3A0xb80eb80c7930dee!2zU3dlZXQgWE8gR29vZCBHcmllZiDljp_lrr_nq7nkuIvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1581565456220!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<!--上に戻るボタン-->
+<aside id="scrolltop"><a href="#">▲</a></aside>
+
+</div><!--pinkの閉じ-->
+
+<footer>
+&copy; 2020 Miyabi Shimada All Rights Reserved.
+</footer>
+
+
+
+</div><!--wrapperの閉じ-->
+</body>
+</html>

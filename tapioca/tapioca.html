@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+<title>Takeshita×Gourmet</title>
+<link href="../css/format.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180×180" href="../images/apple-touch-icon-180x180.png">
+<link href="../css/page.css" rel="stylesheet" type="text/css">
+<link href="../css/tapioca.css" rel="stylesheet" type="text/css">
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="../js/jquery.inview.js"></script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+<script>
+$(function(){
+
+/*colorbox指定*/
+$("article.all a").colorbox({
+maxWidth:"90%",
+maxHeight:"90%"
+});
+
+/*inview指定*/
+$("article#lr1,article#lr2").on('inview',function(event,isInView){
+　if(isInView){/*画面に出てきたときの処理*/
+　　　$(this).css("opacity","1")
+　}else{/*画面外に出たときの処理*/
+　　　$(this).css("opacity","0")
+}
+});
+
+/*ウィンドウ　スクロール指定*/
+$(window).scroll(function(){
+
+ if($(this).scrollTop() > 100){
+  $("aside#scrolltop a").css("bottom","30px");
+}else{
+  $("aside#scrolltop a").css("bottom","-150px");
+
+} 
+
+});
+
+
+});/*jguery閉じ*/
+
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<a href="../index.html"><img src="../images/rogo.svg" alt="ロゴマーク"></a>
+
+<input type="checkbox" id="trigger">
+
+<label for="trigger" id="hamburger"><span></span></label>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li class="now"><a href="tapioca.html">Tapioca</a></li>
+<li><a href="../sweets/sweets.html">Sweets</a></li>
+<li><a href="../colorful/colorful.html">Colorful</a></li>
+</ul>
+</nav>
+
+<label for="trigger" id="coverlayer"></label>
+
+</header>
+
+<!--トップ画像ここから-->
+<div id="top">
+<div id="top_photo">背景画像</div>
+<figure><img src="../images/tapioca_top.svg" alt="タピオカ"></figure>
+</div>
+<!--トップ画像ここまで-->
+
+<!--内容ここから-->
+<div id="pink">
+
+<article class="all">
+
+<h1 id="first">幸福堂　高級タピオカミルク</h1>
+
+<article id="lr1">
+
+<a href="../images/tapioca1.jpg">
+<figure><img src="../images/tapioca1_photo.jpg" alt="タピオカ1"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>原宿でタピオカを飲むなら、まず訪れてほしいのが<br class="sp">このお店。<br>
+ここでは金箔が入った「金箔黒糖タピオカミルク」<br class="sp">を飲むことができます。<br>
+キラキラの輝きはSNS映えすること間違いなし<br class="sp">です^^</p>
+
+<p>そして一番人気は「高級黒糖タピオカミルク」！！<br>
+とにかく黒糖の味が濃い！ストローでかき混ぜると<br class="sp">ミルクと混ざりクリーミーな味わいに変化します。</p>
+
+<p>もっちもちのタピオカもたくさん入っていて<br class="sp">大満足の一品です。</p>
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★★☆<br>
+タピオカの大きさ：★☆☆☆☆<br>
+タピオカの量：★★★★★<br>
+高級感：★★★★★</p>
+
+
+<aside class="address">
+
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目6-12</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12963.52836868009!2d139.69909578481446!3d35.67990513311188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dbfa2dfb201%3A0xe7e3006f43255299!2z5bm456aP5aCC!5e0!3m2!1sja!2sjp!4v1581423333917!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+</iframe>
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<article class="all">
+
+<h1 id="second">茶咖匠(チャカショウ)原宿竹下通り店<br>
+宇治抹茶タピオカ</h1>
+
+<article id="lr2">
+
+<a href="../images/tapioca2.jpg">
+<figure><img src="../images/tapioca2_photo.jpg" alt="タピオカ2"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>様々なチェーン店があるタピオカですが、その中<br class="sp">でも人気なお店が茶咖匠(チャカショウ)です。<br>
+このお店のタピオカはとにかく粒が大きくて<br class="sp">もっちもち！！<br>
+量も沢山入っています！</p>
+
+<p>筆者が今回注文したのは「宇治抹茶タピオカ」<br class="sp">です。<br>
+飲むときはストローでかき混ぜると黒糖タピオカと抹茶とミルクが均等に行き渡って、さらに美味しく<br class="sp">なりますよ！</p>
+
+<p>店内もSNS映えを意識した綺麗な内装なので、<br class="sp">楽しめること間違いナシです！</p>
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★★★<br>
+タピオカの大きさ：★★★★★<br>
+タピオカの量：★★★★★<br>
+一度は飲みたい度：★★★★★</p>
+
+<aside class="address">
+
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目7-1</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2550598038356!2d139.7035103507937!3d35.670721180099434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd6b0e6fe01%3A0xfaca7d4759e5a62c!2z6Iy25ZKW5YygKOODgeODo-OCq-OCt-ODp-OCpinljp_lrr_nq7nkuIvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1581575845006!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<!--上に戻るボタン-->
+<aside id="scrolltop"><a href="#">▲</a></aside>
+
+</div><!--pinkの閉じ-->
+
+<footer>
+&copy; 2020 Miyabi Shimada All Rights Reserved.
+</footer>
+
+
+
+</div><!--wrapperの閉じ-->
+</body>
+</html>

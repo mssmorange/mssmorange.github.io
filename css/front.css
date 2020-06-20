@@ -1,0 +1,601 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=======================================
+基本設定
+想定端末　iPhone SE portrait 320×568
+=========================================*/
+
+/*トップの背景指定ここから*/
+div#topcontents{
+position: relative;
+text-align: center;
+}
+
+div#background{
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+background-image: url("../images/top1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+height: 100vh !important;
+}
+
+div figure#welcome{
+position: absolute;
+top:40vh;
+right: 0px;
+bottom: auto;
+left: 0px;
+margin: 0px auto;
+}
+
+div figure#welcome img{
+width: 300px;
+height: auto;
+}
+
+div figure#down{
+position: absolute;
+top: auto;
+right: 0px;
+bottom: 10px;
+left: 0px;
+
+animation-name: move;
+animation-duration: 3000ms;
+animation-iteration-count: infinite;
+}
+
+div figure#down img{
+height: 60px;
+width: auto;
+opacity: 0.9;
+}
+
+@keyframes move{
+0%{bottom: 10px;}
+50%{bottom: 30px;}
+100%{bottom: 10px;}
+}
+/*トップの背景指定ここまで*/
+
+/*内容ここから*/
+/*イントロダクションここから*/
+div#pink{
+background-color: #FEF5FF;
+padding: 70px 0px;
+text-align: center;
+color: #534242;
+font-size: 1.4rem;
+line-height: 1.25;
+}
+
+figure#introduction{
+margin-bottom: 40px;
+
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+figure#introduction img{
+width: 140px;
+height: auto;
+}
+
+div#introduction_essay{
+width: 290px;
+margin: 0px auto;
+padding-bottom: 70px;
+
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+div#pink p:nth-of-type(1){
+margin-bottom: 10px;
+}
+/*イントロダクションここまで*/
+
+/*メニューここから*/
+figure#menu{
+margin-bottom: 40px;
+
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+figure#menu img{
+width: 70px;
+height: auto;
+}
+
+h1{
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+div#menu_all{
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+/*フキダシ・画像の指定ここから*/
+img.line{
+display: none;
+}
+
+img.photo{
+width: 220px;
+height: auto;
+margin-bottom: 40px;
+}
+/*フキダシ・画像の指定ここまで*/
+/*メニューここまで*/
+
+/*アクセスここから*/
+figure#access{
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+figure#access img{
+width: 70px;
+height: auto;
+margin-bottom: 40px;
+}
+
+div#map{
+width: 280px;
+margin: 0px auto;
+padding-bottom: 20px;
+
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+div#map img{
+width: 280px;
+height: auto;
+margin-bottom: 20px;
+}
+
+aside#guide{
+font-size: 1.3rem;
+
+transition-duration: 1000ms;
+opacity: 0;
+}
+
+/*アクセスここまで*/
+
+/*内容ここまで*/
+
+
+/*========================================
+想定端末　小型のAndroid portrait 360×640
+==========================================*/
+@media screen and (min-width:360px){
+
+
+
+}/*小型のAndroid portrait 360×640ここまで*/
+
+
+/*========================================
+想定端末　iPhone6,7,8 portrait 375×667
+==========================================*/
+@media screen and (min-width:375px){
+
+
+
+}/*iPhone6,7,8 portrait 375×667ここまで*/
+
+
+/*========================================
+想定端末　iPhoneX,Xs,11pro portrait 375×812
+==========================================*/
+@media screen and (min-width:375px) and (min-height:668px){
+
+
+
+}/*iPhoneX,Xs,11pro portrait 375×812ここまで*/
+
+
+/*========================================
+想定端末　iPhone6plus,7plus,8plus portrait 414×736
+==========================================*/
+@media screen and (min-width:414px){
+
+
+
+}/*iPhone6plus,7plus,8plus portrait 414×736ここまで*/
+
+
+/*========================================
+想定端末　iPhoneXR,11 portrait 414×896
+==========================================*/
+@media screen and (min-width:414px) and (min-height:737px){
+
+
+
+}/*iPhoneXR,11 portrait 414×896ここまで*/
+
+
+
+
+
+
+
+
+
+
+/*↑スマートフォン縦ここまで
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+↓スマートフォン横ここから*/
+
+
+/*========================================
+想定端末　iPhoneSE landscape 568×320
+==========================================*/
+@media screen and (min-width:568px){
+
+div figure#welcome img{
+width: 350px;
+}
+
+div figure#down img{
+height: 40px;
+width: auto;
+}
+
+}/*iPhoneSE landscape 568×320ここまで*/
+
+
+/*========================================
+想定端末　小型のAndroid landscape 640×360
+==========================================*/
+@media screen and (min-width:640px){
+
+
+
+}/*小型のAndroid landscape 640×360ここまで*/
+
+
+/*========================================
+想定端末　iPhone6,7,8 landscape 667×375
+==========================================*/
+@media screen and (min-width:667px){
+
+
+
+}/*iPhone6,7,8 landscape 667×375ここまで*/
+
+
+/*========================================
+想定端末　iPhone6plus,7plus,8plus landscape 736×414
+==========================================*/
+@media screen and (min-width:736px){
+
+
+
+}/*iPhone6plus,7plus,8plus landscape 736×414ここまで*/
+
+
+
+/*========================================
+想定端末　iPhoneX,Xs,11pro landscape 812×375
+==========================================*/
+@media screen and (min-width:812px){
+
+
+
+}/*iPhoneX,Xs,11pro landscape 812×375ここまで*/
+
+
+/*========================================
+想定端末　iPhoneXR,11 landscape 896×414
+==========================================*/
+@media screen and (min-width:896px){
+
+
+
+}/*iPhoneXR,11 landscape 896×414ここまで*/
+
+
+
+
+
+
+
+
+
+
+/*↑スマートフォン横ここまで
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+↓タブレット縦ここから*/
+
+
+
+/*========================================
+想定端末　iPad 9.7 portrait 768×1024
+==========================================*/
+@media screen and (min-width:768px) and (min-height:415px){
+
+/*トップの背景指定ここから*/
+div figure#welcome img{
+width: 680px;
+height: auto;
+}
+
+div figure#down img{
+height: 70px;
+width: auto;
+}
+/*トップの背景指定ここまで*/
+
+/*内容ここから*/
+/*イントロダクションここから*/
+div#pink{
+padding: 100px 0px;
+}
+
+figure#introduction,
+figure#menu,
+figure#access{
+margin-bottom: 50px;
+}
+
+figure#introduction img{
+width: 200px;
+height: auto;
+}
+
+div#introduction_essay{
+width: 650px;
+padding-bottom: 70px;
+}
+
+div#introduction_essay p{
+font-size: 1.6rem;
+}
+/*イントロダクションここまで*/
+
+/*メニューここから*/
+figure#menu img{
+width: 100px;
+height: auto;
+}
+
+section{
+position: relative;
+width: 650px;
+height: 300px;
+margin: 0px auto;
+margin-bottom: 50px;
+}
+
+section.right h1{
+font-size: 1.7rem;
+position: absolute;
+top:127px;
+right: auto;
+bottom: auto;
+left: 20px;
+}
+
+section.left h1{
+font-size: 1.7rem;
+position: absolute;
+top:127px;
+right: 40px;
+bottom: auto;
+left: auto;
+}
+
+section.left img.line{
+transform: scale(-1,1);
+}
+
+div.contents{
+display: flex;
+justify-content: space-around;
+}
+
+div.contents img.line{
+display: inline;
+width: 220px;
+height: auto;
+}
+
+div.contents img.photo{
+width: 270px;
+height: auto;
+}
+/*メニューここまで*/
+
+/*アクセスここから*/
+figure#access img{
+width: 120px;
+height: auto;
+}
+
+div#map{
+width: 500px;
+}
+
+div#map img{
+width: 450px;
+height: auto;
+margin-bottom: 50px;
+}
+
+aside#guide p{
+font-size: 1.5rem;
+}
+/*アクセスここまで*/
+/*内容ここまで*/
+
+}/*iPad 9.7 portrait 768×1024ここまで
+
+
+/*========================================
+想定端末　iPad Air portrait 834×1112
+==========================================*/
+@media screen and (min-width:834px) and (min-height:415px){
+
+
+
+}/*iPad Air portrait 834×1112ここまで*/
+
+
+
+/*========================================
+想定端末　iPad Pro 11 portrait 834×1169
+==========================================*/
+@media screen and (min-width:834px) and (min-height:1113px){
+
+
+
+}/*iPad Pro 11 portrait 834×1169ここまで*/
+
+
+/*========================================
+想定端末　iPad Pro 12.9 portrait 1024×1366
+==========================================*/
+@media screen and (min-width:1024px){
+
+
+
+}/*iPad Pro 12.9 portrait 1024×1366ここまで*/
+
+
+
+
+
+
+
+
+
+/*↑タブレット縦ここまで
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+↓タブレット横ここから*/
+
+
+/*========================================
+想定端末　iPad 9.7 landscape 1024×768
+==========================================*/
+@media screen and (min-width:1024px) and (orientation:landscape){
+
+
+
+}/*iPad 9.7 landscape 1024×768ここまで*/
+
+
+/*========================================
+想定端末　iPad Air landscape 1112×834
+==========================================*/
+@media screen and (min-width:1112px){
+
+
+
+}/*iPad Air landscape 1112×834ここまで*/
+
+
+/*========================================
+想定端末　iPad Pro 11 landscape 1169×834
+==========================================*/
+@media screen and (min-width:1169px){
+
+
+
+}/*iPad Pro 11 landscape 1169×834ここまで*/
+
+
+/*========================================
+想定端末　iPad Pro 12.9 landscape 1366×1024
+==========================================*/
+@media screen and (min-width:1366px){
+
+
+
+}/*iPad Pro 12.9 landscape 1366×1024ここまで*/
+
+
+
+
+
+
+
+
+
+
+/*↑タブレット横ここまで
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+↓PCここから※マウスあり*/
+
+
+/*========================================
+想定端末　PC 1367~
+==========================================*/
+@media screen and (min-width:1367px){
+
+div figure#welcome{
+top:35vh;
+}
+
+div figure#welcome img{
+width: 870px;
+height: auto;
+}
+
+/*メニューここから*/
+div#menu_all{
+width: 990px;
+margin: 0px auto;
+}
+
+section.right{
+margin-left: 300px;
+}
+
+section.left{
+margin-right: 300px;
+}
+
+div#menu_all a{
+position: relative;
+top: auto;
+right: auto;
+bottom: 0px;
+left: auto;
+transition-duration: 500ms;
+}
+
+div#menu_all a:hover{
+bottom: 20px;
+}
+
+/*メニューここまで*/
+
+/*アクセスここから*/
+div#map{
+width: 990px;
+display: flex;
+justify-content: space-between;
+}
+
+div#map img{
+width: 400px;
+height: auto;
+}
+
+
+
+/*アクセスここまで*/
+
+
+}/*PC 1367~ここまで*/
+

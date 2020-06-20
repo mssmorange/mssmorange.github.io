@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+html{
+margin: 0px;
+padding: 0px;
+font-size: 10px;
+line-height: 1;
+}
+
+body{
+margin: 0px;
+padding: 0px;
+}
+
+
+/*エリア分けするタグたち*/
+header,
+footer,
+nav,
+article,
+section,
+aside,
+div{
+margin: 0px;
+padding: 0px;
+}
+
+/*文章・情報を分類するタグたち*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+figcaption{
+margin: 0px;
+padding: 0px;
+font-size: 100%;
+font-weight: inherit;;
+}
+
+ul,ol{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+li{
+margin: 0px;
+padding: 0px;
+}
+
+dl,dt,dd{
+margin: 0px;
+padding: 0px;
+}
+
+/*インライン・インラインブロック要素*/
+img{
+vertical-align: bottom;
+}
+
+a,
+span,
+em,
+strong,
+time,
+small{
+font-weight: inherit;
+font-size: 100%;
+font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
