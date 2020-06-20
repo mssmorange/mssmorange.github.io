@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+<title>Takeshita×Gourmet</title>
+<link href="css/format.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/front.css" rel="stylesheet" type="text/css">
+<link href="css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="css/vegas.min.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180×180" href="images/apple-touch-icon-180x180.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.inview.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script>
+$(function(){
+
+/*colorbox指定*/
+$("div#map a").colorbox({
+maxWidth:"90%",
+maxHeight:"90%"
+});
+
+/*vegas指定*/
+$('#background').vegas({
+  overlay: true,
+  transition:'flash',
+  transitionDuration: 1000,
+  delay: 5000,
+  animation:'random',
+  animationDuration:10000,
+  slides:[
+    {src:'images/top1.jpg'},
+    {src:'images/top2.jpg'},
+    {src:'images/top3.jpg'},
+    {src:'images/top4.jpg'},
+    {src:'images/top5.jpg'},
+]
+});
+
+/*inview指定*/
+$("#introduction,#introduction_essay,#menu,#menu_all,#access,#map,#guide").on
+('inview',function(event,isInView){
+　if(isInView){/*画面に出てきたときの処理*/
+　　　$(this).css("opacity","1")
+　}else{/*画面外に出たときの処理*/
+　　　$(this).css("opacity","0")
+}
+
+});
+
+/*ウィンドウ　スクロール指定*/
+$(window).scroll(function(){
+
+ if($(this).scrollTop() > 100){
+  $("aside#scrolltop a").css("bottom","30px");
+}else{
+  $("aside#scrolltop a").css("bottom","-150px");
+
+} 
+
+});
+
+});/*jguery閉じ*/
+
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<a href="index.html"><img src="images/rogo.svg" alt="ロゴマーク"></a>
+
+<input type="checkbox" id="trigger">
+
+<label for="trigger" id="hamburger"><span></span></label>
+
+<nav>
+<ul>
+<li class="now"><a href="index.html">Home</a></li>
+<li><a href="tapioca/tapioca.html">Tapioca</a></li>
+<li><a href="sweets/sweets.html">Sweets</a></li>
+<li><a href="colorful/colorful.html">Colorful</a></li>
+</ul>
+</nav>
+
+<label for="trigger" id="coverlayer"></label>
+
+</header>
+
+<!--背景画像ここから-->
+<div id="topcontents">
+
+<div id="background">背景画像</div>
+
+<figure id="welcome"><img src="images/welcome.svg" alt="トップ文字"></figure>
+
+<figure id="down"><img src="images/down.svg" alt="下矢印"></figure>
+
+</div>
+<!--背景画像ここまで-->
+
+<!--内容ここから-->
+<div id="pink">
+
+<figure id="introduction"><img src="images/introduction.svg" alt="イントロダクション"></figure>
+
+<div id="introduction_essay">
+<p>
+文化の街、原宿へようこそ！<br>
+原宿にはオシャレなお店や変わったお店が<br class="sp">たっくさんあります。<br>
+だからこそどこへ行ったら良いか<br class="sp">迷ってしまいますよね。<br>
+</p>
+<p>
+このサイトは竹下通りで食べられる<br class="sp">オススメのスイーツとグルメを<br class="sp">紹介しています。<br>
+こちらを参考にして原宿を<br class="sp">100倍楽しんでくださいね♪<br>
+</p>
+</div>
+
+<figure id="menu"><img src="images/menu.svg" alt="メニュー"></figure>
+
+<!--タピオカここから-->
+<div id="menu_all">
+<section class="right">
+
+<h1>
+原宿に来たら一度は飲みたい<br>
+オススメタピオカをご紹介♪
+</h1>
+
+<div class="contents">
+<img src="images/line.svg" alt="強調" class="line">
+<a href="tapioca/tapioca.html"><img src="images/tapioca.svg" alt="タピオカ紹介" class="photo"></a>
+</div>
+
+</section>
+<!--タピオカここまで-->
+
+<!--スイーツここから-->
+<section class="left">
+
+<h1>
+甘いもの特集♪<br>
+原宿限定スイーツも！
+</h1>
+
+<div class="contents">
+<a href="sweets/sweets.html"><img src="images/sweets.svg" alt="スイーツ紹介" class="photo"></a>
+<img src="images/line.svg" alt="強調" class="line">
+</div>
+
+</section>
+<!--スイーツここまで-->
+
+<!--カラフルここから-->
+<section class="right">
+
+<h1>
+SNS映え間違いなし！<br>
+最強レインボーフード特集★
+</h1>
+
+<div class="contents">
+<img src="images/line.svg" alt="強調" class="line">
+<a href="colorful/colorful.html"><img src="images/colorful.svg" alt="カラフル紹介" class="photo"></a>
+</div>
+
+</section>
+</div>
+<!--カラフルここまで-->
+
+<!--アクセスここから-->
+<figure id="access"><img src="images/access.svg" alt="アクセス"></figure>
+
+<div id="map">
+<a href="images/train.png">
+<figure><img src="images/train.png" alt="原宿へのアクセス"></figure>
+</a>
+
+<a href="images/harazyuku.png">
+<figure><img src="images/harazyuku.png" alt="竹下通りへのアクセス"></figure>
+</a>
+</div>
+
+<aside id="guide">
+<p>
+JR原宿駅 竹下口から徒歩30秒<br>
+東京メトロ千代田線・副都心線<br>
+明治神宮前駅(3番出口)から徒歩4分
+</p>
+</aside>
+<!--アクセスここまで-->
+<!--内容ここまで-->
+
+<!--上に戻るボタン-->
+<aside id="scrolltop"><a href="#">▲</a></aside>
+
+</div><!--pinkの閉じ-->
+
+<footer>
+&copy; 2020 Miyabi Shimada All Rights Reserved.
+</footer>
+
+
+
+</div><!--wrapperの閉じ-->
+</body>
+</html>
