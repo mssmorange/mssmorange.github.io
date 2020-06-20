@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+<title>Takeshita×Gourmet</title>
+<link href="../css/format.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180×180" href="../images/apple-touch-icon-180x180.png">
+<link href="../css/page.css" rel="stylesheet" type="text/css">
+<link href="../css/sweets.css" rel="stylesheet" type="text/css">
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="../js/jquery.inview.js"></script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+<script>
+$(function(){
+
+/*colorbox指定*/
+$("article.all a").colorbox({
+maxWidth:"90%",
+maxHeight:"90%"
+});
+
+/*inview指定*/
+$("article#lr1,article#lr2").on('inview',function(event,isInView){
+　if(isInView){/*画面に出てきたときの処理*/
+　　　$(this).css("opacity","1")
+　}else{/*画面外に出たときの処理*/
+　　　$(this).css("opacity","0")
+}
+});
+
+/*ウィンドウ　スクロール指定*/
+$(window).scroll(function(){
+
+ if($(this).scrollTop() > 100){
+  $("aside#scrolltop a").css("bottom","30px");
+}else{
+  $("aside#scrolltop a").css("bottom","-150px");
+
+} 
+
+});
+
+});/*jguery閉じ*/
+
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<a href="../index.html"><img src="../images/rogo.svg" alt="ロゴマーク"></a>
+
+<input type="checkbox" id="trigger">
+
+<label for="trigger" id="hamburger"><span></span></label>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../tapioca/tapioca.html">Tapioca</a></li>
+<li class="now"><a href="sweets.html">Sweets</a></li>
+<li><a href="../colorful/colorful.html">Colorful</a></li>
+</ul>
+</nav>
+
+<label for="trigger" id="coverlayer"></label>
+
+</header>
+
+<!--トップ画像ここから-->
+<div id="top">
+<div id="top_photo">背景画像</div>
+<figure><img src="../images/sweets_top.svg" alt="スイーツ"></figure>
+</div>
+<!--トップ画像ここまで-->
+
+<!--内容ここから-->
+<div id="pink">
+
+<article class="all">
+
+<h1 id="first">
+アイスウェルト ジェラート 原宿店<br>
+ブタさんジェラート
+</h1>
+
+<article id="lr1">
+
+<a href="../images/sweets1.jpg">
+<figure><img src="../images/sweets1_photo.jpg" alt="スイーツ1"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>とっても可愛いジェラートが食べられるお店。<br>
+ラインナップが豊富で、ブタの他にテディベアや<br class="sp">ひよこ、カエルといった動物たちが揃っています！</p>
+
+<p>ジェラートなので、食感が軽くお腹にもたまり<br class="sp">ません。<br>
+他のお店で食べる予定があっても安心ですね。</p>
+
+<p>ちなみにジェラートがとても溶けやすいので<br class="sp">撮影は受け取ってから1分以内で行いましょう…！</p>
+
+<p>日本では原宿でしか食べられないジェラート。<br>
+竹下通りに訪れたら是非食べたい一品です！</p>  
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★★★<br>
+甘さ：★★★★☆<br>
+満腹感：★☆☆☆☆<br>
+急いで食べる度：★★★★★</p>
+
+<aside class="address">
+
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目8-5<br>マロンビルTAKIZAWA </p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2736712518936!2d139.70435621532818!3d35.67026283818057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188daa60a00737%3A0xade265e32d012df3!2z44Ki44Kk44K544Km44Kn44Or44OIIOOCuOOCp-ODqeODvOODiCDljp_lrr_lupc!5e0!3m2!1sja!2sjp!4v1581577004198!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<article class="all">
+
+<h1 id="second">
+SWEETBOX<br>
+キャラメルアップルクリーム</h1>
+
+<article id="lr2">
+
+<a href="../images/sweets2.jpg">
+<figure><img src="../images/sweets2_photo.jpg" alt="スイーツ2"></figure>
+</a>
+
+<article class="sentence">
+<article class="text">
+<p>「原宿　クレープ」等のキーワードで検索すると<br class="sp">必ずといって良いほど紹介されているこのお店。<br>
+実は原宿で有名なクレープ屋さんです。<br>
+竹下通りには1号店と2号店があります。1号店は、<br class="sp">原宿駅から徒歩1分程の場所にあり、2号店には<br class="sp">イートインスペースがあるという、それぞれ便利なのが特徴です！</p>
+
+<p>今回、筆者は1号店で「キャラメルアップルクリーム」を注文してみました！<br>
+生クリームがとっても甘く、下までたっぷり入って<br class="sp">います。<br>
+りんごのシャキシャキとした食感が良いアクセントでした。</p>
+
+<p>一つ食べただけでお腹も気持ちも大満足する<br class="sp">一品です♪</p>
+
+</article><!--textの閉じ-->
+
+<aside class="information">
+<p>＜満足度（5段階評価）＞<br>
+SNS映え：★★★☆☆<br>
+甘さ：★★★★★<br>
+満腹感：★★★★☆<br>
+原宿といえば度：★★★★★</p>
+
+<aside class="address">
+
+<p>〒150-0001<br>東京都渋谷区神宮前1丁目17-5<br>
+（※1号店の情報がGoogleマップに<br>存在しないため、2号店の住所を<br>記載しています。）</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2277437444495!2d139.7015358152586!3d35.671393880196575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cbae720cacb%3A0xe0129f1981338b0c!2z44K544Kk44O844OI44Oc44OD44Kv44K5Mg!5e0!3m2!1sja!2sjp!4v1581577448748!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</aside>
+
+</aside>
+
+</article><!--sentenceの閉じ-->
+
+</article><!--lrの閉じ-->
+
+</article><!--allの閉じ-->
+
+<!--上に戻るボタン-->
+<aside id="scrolltop"><a href="#">▲</a></aside>
+
+</div><!--pinkの閉じ-->
+
+<footer>
+&copy; 2020 Miyabi Shimada All Rights Reserved.
+</footer>
+
+
+
+</div><!--wrapperの閉じ-->
+</body>
+</html>
